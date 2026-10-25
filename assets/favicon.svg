@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="#0b0f19" />
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="none" stroke="url(#brandGrad)" stroke-width="2" />
+  <polygon points="26 4 6 28 22 28 20 44 40 20 24 20 26 4" fill="url(#brandGrad)" filter="url(#glow)" />
+</svg>

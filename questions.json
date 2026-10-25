@@ -1,0 +1,965 @@
+[
+  {
+    "id": "q1",
+    "topic": "HTML5",
+    "difficulty": "Beginner",
+    "question": "Which HTML5 semantic element should be used to encapsulate standalone, self-contained content that could be independently distributed or syndicated?",
+    "codeSnippet": null,
+    "options": [
+      "<section>",
+      "<article>",
+      "<aside>",
+      "<main>"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think of blog posts, news stories, or forum threads that make sense outside the context of the page.",
+    "explanation": "The <article> element is intended for self-contained, independent compositions that can stand alone (such as a blog post or news item), whereas <section> represents a generic thematic grouping."
+  },
+  {
+    "id": "q2",
+    "topic": "HTML5",
+    "difficulty": "Beginner",
+    "question": "Why is the 'alt' attribute essential on an <img> tag?",
+    "codeSnippet": "<img src=\"hero.svg\" alt=\"DevQuiz Application Logo\">",
+    "options": [
+      "It provides a CSS tooltip when hovering over the image.",
+      "It improves accessibility for screen reader users and acts as a text fallback if the image fails to load.",
+      "It specifies the responsive pixel density ratio for high-resolution screens.",
+      "It informs web search spiders to compress the image asset."
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider both assistive technologies and scenarios where network connectivity fails.",
+    "explanation": "The 'alt' (alternative text) attribute gives descriptive context for screen reader users and displays as fallback text if the image asset fails to download or render."
+  },
+  {
+    "id": "q3",
+    "topic": "HTML5",
+    "difficulty": "Beginner",
+    "question": "Which HTML5 element represents navigation links intended to navigate within the site or to other external pages?",
+    "codeSnippet": "<nav>\n  <ul>\n    <li><a href=\"#home\">Home</a></li>\n    <li><a href=\"#about\">About</a></li>\n  </ul>\n</nav>",
+    "options": [
+      "<menu>",
+      "<nav>",
+      "<navigation>",
+      "<links>"
+    ],
+    "correctAnswer": 1,
+    "hint": "It is a three-letter semantic element introduced in HTML5 for major navigation blocks.",
+    "explanation": "The <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents."
+  },
+  {
+    "id": "q4",
+    "topic": "HTML5",
+    "difficulty": "Beginner",
+    "question": "Which HTML5 tag is used to specify a caption or legend for a <figure> element?",
+    "codeSnippet": "<figure>\n  <img src=\"chart.png\" alt=\"Quarterly Growth\">\n  <figcaption>Figure 1: Quarterly revenue growth</figcaption>\n</figure>",
+    "options": [
+      "<legend>",
+      "<caption>",
+      "<figcaption>",
+      "<summary>"
+    ],
+    "correctAnswer": 2,
+    "hint": "It combines 'fig' and 'caption'.",
+    "explanation": "The <figcaption> element represents a caption or legend describing the rest of the contents of its parent <figure> element."
+  },
+  {
+    "id": "q5",
+    "topic": "HTML5",
+    "difficulty": "Beginner",
+    "question": "What is the primary function of the '<!DOCTYPE html>' declaration at the very top of an HTML document?",
+    "codeSnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>...",
+    "options": [
+      "It links the HTML document to external CSS stylesheets.",
+      "It instructs the browser to render the page in standard compliance mode rather than quirks mode.",
+      "It acts as a root element containing all other page elements.",
+      "It enables JavaScript execution in the browser."
+    ],
+    "correctAnswer": 1,
+    "hint": "Without it, browsers may render CSS using legacy Internet Explorer 5 behaviors (quirks mode).",
+    "explanation": "In HTML5, '<!DOCTYPE html>' triggers modern standards mode across all browsers, preventing the browser from slipping into 'quirks mode' where box models and styling behave unpredictably."
+  },
+  {
+    "id": "q6",
+    "topic": "HTML5",
+    "difficulty": "Intermediate",
+    "question": "What is the primary difference between the 'defer' and 'async' attributes when loading external JavaScript in HTML?",
+    "codeSnippet": "<script src=\"app.js\" defer></script>\n<script src=\"analytics.js\" async></script>",
+    "options": [
+      "'async' blocks HTML parsing until downloaded; 'defer' downloads silently after page unload.",
+      "'defer' preserves execution order and runs after DOM parsing completes; 'async' executes immediately once downloaded.",
+      "'defer' only works on inline scripts; 'async' only works on external scripts.",
+      "'defer' executes before the DOM starts parsing; 'async' waits for the window load event."
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider script dependency order and when the DOM is guaranteed to be fully constructed.",
+    "explanation": "Scripts with 'defer' are downloaded asynchronously and executed in document order after the DOM has finished parsing (before DOMContentLoaded). Scripts with 'async' execute as soon as they finish downloading, without respecting document order."
+  },
+  {
+    "id": "q7",
+    "topic": "HTML5",
+    "difficulty": "Intermediate",
+    "question": "Which attribute on an <input> element displays a numeric keypad on mobile devices without restricting input to only numbers?",
+    "codeSnippet": "<input type=\"text\" inputmode=\"numeric\" pattern=\"[0-9]*\">",
+    "options": [
+      "inputmode=\"numeric\"",
+      "virtual-keyboard=\"digits\"",
+      "keyboard=\"number\"",
+      "mobile-keypad=\"tel\""
+    ],
+    "correctAnswer": 0,
+    "hint": "The attribute specifies what type of on-screen virtual keyboard to show to mobile users.",
+    "explanation": "The 'inputmode=\"numeric\"' attribute instructs mobile operating systems (iOS and Android) to open the numeric keypad without forcing the stricter constraints or quirks of type=\"number\"."
+  },
+  {
+    "id": "q8",
+    "topic": "HTML5",
+    "difficulty": "Intermediate",
+    "question": "Which HTML5 element contains predefined options for an <input> control, providing an autocomplete dropdown?",
+    "codeSnippet": "<input list=\"frameworks\">\n<datalist id=\"frameworks\">\n  <option value=\"React\">\n  <option value=\"Vue\">\n</datalist>",
+    "options": [
+      "<select>",
+      "<optgroup>",
+      "<datalist>",
+      "<dropdown>"
+    ],
+    "correctAnswer": 2,
+    "hint": "It contains a list of suggested data connected via the input's 'list' attribute.",
+    "explanation": "The <datalist> tag specifies a list of pre-defined options for an <input> element, providing an autocomplete dropdown while still allowing users to type custom text."
+  },
+  {
+    "id": "q9",
+    "topic": "HTML5",
+    "difficulty": "Intermediate",
+    "question": "What is the purpose of the '<picture>' element in responsive web design?",
+    "codeSnippet": "<picture>\n  <source media=\"(min-width: 800px)\" srcset=\"large.jpg\">\n  <source media=\"(min-width: 450px)\" srcset=\"medium.jpg\">\n  <img src=\"small.jpg\" alt=\"Landscape\">\n</picture>",
+    "options": [
+      "It creates an HTML5 Canvas drawing area for rendering 3D graphics.",
+      "It allows developers to serve different image sources based on screen resolution, media queries, or image format support.",
+      "It automatically compresses image bytes before downloading.",
+      "It provides fallback captions for screen readers exclusively."
+    ],
+    "correctAnswer": 1,
+    "hint": "It enables 'art direction' and format fallback (like WebP/AVIF with JPEG fallback).",
+    "explanation": "The <picture> element wraps multiple <source> tags and a fallback <img>, allowing the browser to choose the most appropriate image based on viewport dimensions, pixel density, or file format capabilities."
+  },
+  {
+    "id": "q10",
+    "topic": "HTML5",
+    "difficulty": "Intermediate",
+    "question": "Which HTML5 element is used to represent an expandable disclosure widget from which the user can obtain additional information or controls?",
+    "codeSnippet": "<details>\n  <summary>System Requirements</summary>\n  <p>Requires 4GB RAM and modern browser.</p>\n</details>",
+    "options": [
+      "<accordion>",
+      "<toggle>",
+      "<details>",
+      "<drawer>"
+    ],
+    "correctAnswer": 2,
+    "hint": "It pairs directly with a <summary> element.",
+    "explanation": "The <details> element creates a native disclosure widget that opens and closes on click without requiring JavaScript. The <summary> element provides the visible heading for the widget."
+  },
+  {
+    "id": "q11",
+    "topic": "HTML5",
+    "difficulty": "Advanced",
+    "question": "Which meta tag configuration ensures proper viewport scaling and mobile-first responsive rendering across modern mobile browsers?",
+    "codeSnippet": "<meta name=\"viewport\" content=\"...\">",
+    "options": [
+      "content=\"width=1024, user-scalable=no\"",
+      "content=\"width=device-width, initial-scale=1.0\"",
+      "content=\"initial-scale=1.0, maximum-scale=1.0\"",
+      "content=\"device-width, target-densitydpi=device-dpi\""
+    ],
+    "correctAnswer": 1,
+    "hint": "You need to instruct the browser to match screen width in CSS pixels and set a 1:1 initial zoom level.",
+    "explanation": "The viewport tag with 'width=device-width, initial-scale=1.0' sets the width of the page to follow the screen-width of the device and initializes the default zoom level to 1.0."
+  },
+  {
+    "id": "q12",
+    "topic": "HTML5",
+    "difficulty": "Advanced",
+    "question": "What security risk is mitigated by adding 'rel=\"noopener noreferrer\"' when opening external links with 'target=\"_blank\"'?",
+    "codeSnippet": "<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\">Visit</a>",
+    "options": [
+      "It prevents Cross-Site Scripting (XSS) in local cookies.",
+      "It prevents the newly opened tab from accessing 'window.opener' and redirecting the parent page (reverse tabnabbing).",
+      "It encrypts the payload transmitted over HTTP.",
+      "It forces the browser to open the link in incognito mode."
+    ],
+    "correctAnswer": 1,
+    "hint": "Without it, the child window retains a reference to window.opener on the originating page.",
+    "explanation": "When target=\"_blank\" is used, the opened page has access to window.opener and could manipulate window.opener.location to navigate the original page to a phishing clone ('reverse tabnabbing'). 'rel=\"noopener\"' severs this reference."
+  },
+  {
+    "id": "q13",
+    "topic": "HTML5",
+    "difficulty": "Advanced",
+    "question": "What is the purpose of the 'rel=\"preload\"' link header in HTML document head?",
+    "codeSnippet": "<link rel=\"preload\" href=\"fonts/inter.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>",
+    "options": [
+      "It caches the asset in Service Worker cache storage for offline access.",
+      "It informs the browser's preload scanner to fetch critical resources early in the lifecycle before layout rendering.",
+      "It delays resource downloads until the window.onload event fires.",
+      "It prevents the resource from ever being downloaded on mobile connections."
+    ],
+    "correctAnswer": 1,
+    "hint": "It provides a declarative fetch request that forces the browser to request resources needed shortly.",
+    "explanation": "'rel=\"preload\"' instructs the browser to download a high-priority resource as soon as possible, ensuring critical assets (like fonts, hero images, or core scripts) are ready before the render engine encounters them in CSS/DOM."
+  },
+  {
+    "id": "q14",
+    "topic": "HTML5",
+    "difficulty": "Advanced",
+    "question": "In the Web Components standard, what is the role of the '<template>' element?",
+    "codeSnippet": "<template id=\"user-card-template\">\n  <div class=\"user-card\"><slot name=\"name\"></slot></div>\n</template>",
+    "options": [
+      "It renders dynamic markup on the server before transmitting to client.",
+      "It holds client-side content that is not rendered during page load, but can be instantiated and cloned via JavaScript.",
+      "It automatically compiles handlebars expressions into DOM nodes.",
+      "It creates an isolated CSS stylesheet that ignores root styles."
+    ],
+    "correctAnswer": 1,
+    "hint": "Its contents are parsed into a DocumentFragment but remain hidden until cloned via content.cloneNode(true).",
+    "explanation": "The <template> tag holds HTML markup that the browser parses without rendering, executing scripts, or downloading images until cloned and attached to the DOM by JavaScript."
+  },
+  {
+    "id": "q15",
+    "topic": "HTML5",
+    "difficulty": "Advanced",
+    "question": "Which HTML attribute specifies that an element's text direction should be isolated from surrounding text, useful when inserting bidirectional user input?",
+    "codeSnippet": "<bdi class=\"username\">...</bdi>",
+    "options": [
+      "<bdo dir=\"ltr\">",
+      "<bdi>",
+      "<text-dir auto>",
+      "<span isolate-bidi>"
+    ],
+    "correctAnswer": 1,
+    "hint": "It stands for Bi-directional Isolation.",
+    "explanation": "The <bdi> (Bi-directional Isolation) element tells the browser's bidirectional algorithm to treat the text it contains in isolation from surrounding text, preventing Hebrew/Arabic text from corrupting Latin surrounding text."
+  },
+
+  {
+    "id": "q16",
+    "topic": "CSS3",
+    "difficulty": "Beginner",
+    "question": "When 'box-sizing: border-box' is applied to an element, which components are included in the element's specified width and height?",
+    "codeSnippet": ".card {\n  box-sizing: border-box;\n  width: 300px;\n  padding: 20px;\n  border: 2px solid #3b82f6;\n}",
+    "options": [
+      "Content, padding, and border only (margin is excluded)",
+      "Content only (padding and border add to the total width)",
+      "Content, padding, border, and margin",
+      "Padding and margin only"
+    ],
+    "correctAnswer": 0,
+    "hint": "Contrast this with default 'content-box' where padding and borders push the element beyond its set width.",
+    "explanation": "Under 'box-sizing: border-box', the element's declared width and height include content, padding, and borders. Margins remain external spacing around the element."
+  },
+  {
+    "id": "q17",
+    "topic": "CSS3",
+    "difficulty": "Beginner",
+    "question": "Which CSS unit is relative to the font-size of the root (<html>) element rather than the parent element?",
+    "codeSnippet": "h1 {\n  font-size: 2.25rem;\n  margin-bottom: 1rem;\n}",
+    "options": [
+      "em",
+      "rem",
+      "vh",
+      "ch"
+    ],
+    "correctAnswer": 1,
+    "hint": "The 'r' stands for root.",
+    "explanation": "'rem' stands for 'root em'. While 'em' is relative to the font-size of its immediate parent element (which can compound recursively), 'rem' is always relative to the root (<html>) element's font-size."
+  },
+  {
+    "id": "q18",
+    "topic": "CSS3",
+    "difficulty": "Beginner",
+    "question": "Which CSS property is used to change the mouse cursor appearance into a hand when hovering over an interactive element?",
+    "codeSnippet": ".button {\n  cursor: pointer;\n}",
+    "options": [
+      "mouse: click",
+      "pointer: active",
+      "cursor: pointer",
+      "interaction: hand"
+    ],
+    "correctAnswer": 2,
+    "hint": "The property name is 'cursor' and the value indicates pointing.",
+    "explanation": "The 'cursor: pointer' CSS rule displays a pointing hand icon when the user hovers over the element, signaling interactivity."
+  },
+  {
+    "id": "q19",
+    "topic": "CSS3",
+    "difficulty": "Beginner",
+    "question": "What is the default value of the CSS 'position' property on HTML elements?",
+    "codeSnippet": ".box {\n  /* default position */\n}",
+    "options": [
+      "relative",
+      "static",
+      "absolute",
+      "fixed"
+    ],
+    "correctAnswer": 1,
+    "hint": "Elements positioned with this default stay in normal document flow and ignore top, right, bottom, and left.",
+    "explanation": "The default CSS position is 'static'. Static elements are laid out in the normal document flow and ignore offset properties like top, left, z-index, etc."
+  },
+  {
+    "id": "q20",
+    "topic": "CSS3",
+    "difficulty": "Beginner",
+    "question": "Which CSS property specifies how elements inside a flex container are aligned along the main axis?",
+    "codeSnippet": ".container {\n  display: flex;\n  justify-content: space-between;\n}",
+    "options": [
+      "align-items",
+      "justify-content",
+      "align-content",
+      "flex-direction"
+    ],
+    "correctAnswer": 1,
+    "hint": "align-items aligns along the cross axis, while this property aligns along the main axis.",
+    "explanation": "'justify-content' aligns flex items along the main axis (e.g. horizontally in row layout), while 'align-items' aligns items along the cross axis."
+  },
+  {
+    "id": "q21",
+    "topic": "CSS3",
+    "difficulty": "Intermediate",
+    "question": "In CSS Flexbox, what does the shorthand property 'flex: 1 1 auto;' specify in terms of growth, shrinkage, and basis?",
+    "codeSnippet": ".item {\n  flex: 1 1 auto;\n}",
+    "options": [
+      "flex-grow: 1, flex-shrink: 1, flex-basis: auto",
+      "flex-grow: 1, flex-order: 1, flex-basis: auto",
+      "flex-grow: 1, flex-shrink: 0, flex-basis: 0%",
+      "flex-basis: 1, flex-grow: 1, flex-direction: auto"
+    ],
+    "correctAnswer": 0,
+    "hint": "The order of parameters in the 'flex' shorthand is growth factor, shrink factor, and starting size.",
+    "explanation": "The 'flex' shorthand accepts three sub-properties in order: flex-grow, flex-shrink, and flex-basis. Therefore, 'flex: 1 1 auto' enables proportional growth, proportional shrinkage, and sizes according to content."
+  },
+  {
+    "id": "q22",
+    "topic": "CSS3",
+    "difficulty": "Intermediate",
+    "question": "What is the CSS specificity hierarchy value for the selector: 'nav.navbar ul > li:first-child a.active'?",
+    "codeSnippet": "nav.navbar ul > li:first-child a.active {\n  color: #38bdf8;\n}",
+    "options": [
+      "(0, 2, 4) - 0 IDs, 2 classes/pseudo-classes, 4 elements",
+      "(0, 3, 4) - 0 IDs, 3 classes/pseudo-classes, 4 elements",
+      "(1, 2, 3) - 1 ID, 2 classes, 3 elements",
+      "(0, 4, 3) - 0 IDs, 4 classes, 3 elements"
+    ],
+    "correctAnswer": 1,
+    "hint": "Count classes (.navbar, .active) and pseudo-classes (:first-child) separately from elements (nav, ul, li, a).",
+    "explanation": "There are 0 ID selectors; 3 classes and pseudo-classes (.navbar, :first-child, .active); and 4 element selectors (nav, ul, li, a). Thus the specificity tuple is (0, 3, 4)."
+  },
+  {
+    "id": "q23",
+    "topic": "CSS3",
+    "difficulty": "Intermediate",
+    "question": "What media query feature detects if the operating system has a user preference for dark or light appearance?",
+    "codeSnippet": "@media (prefers-color-scheme: dark) {\n  :root {\n    --bg-primary: #0f172a;\n    --text-primary: #f8fafc;\n  }\n}",
+    "options": [
+      "prefers-color-scheme",
+      "device-theme",
+      "system-contrast",
+      "inverted-colors"
+    ],
+    "correctAnswer": 0,
+    "hint": "It checks whether the system color scheme preferred by the user is light or dark.",
+    "explanation": "The 'prefers-color-scheme' CSS media feature is used to detect if the user has requested light or dark color themes in their system settings or browser preferences."
+  },
+  {
+    "id": "q24",
+    "topic": "CSS3",
+    "difficulty": "Intermediate",
+    "question": "What is the effect of the CSS rule 'overflow: hidden' on an element that contains floating child elements?",
+    "codeSnippet": ".clearfix-container {\n  overflow: hidden;\n}",
+    "options": [
+      "It hides all floating child elements completely.",
+      "It establishes a new Block Formatting Context (BFC), containing floats without extra markup.",
+      "It disables horizontal scrolling on mobile touch screens only.",
+      "It transforms the element into an inline-level element."
+    ],
+    "correctAnswer": 1,
+    "hint": "BFC causes the parent element to expand its height to encompass floated children.",
+    "explanation": "Applying 'overflow: hidden' (or auto/clip) creates a new Block Formatting Context (BFC), which forces the container to calculate its height including internal floated elements."
+  },
+  {
+    "id": "q25",
+    "topic": "CSS3",
+    "difficulty": "Intermediate",
+    "question": "Which CSS function clamps a value between an allowable minimum and maximum range with a preferred fluid value?",
+    "codeSnippet": "h1 {\n  font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);\n}",
+    "options": [
+      "minmax()",
+      "calc-range()",
+      "clamp()",
+      "fluid()"
+    ],
+    "correctAnswer": 2,
+    "hint": "It accepts three parameters: minimum value, preferred value, and maximum value.",
+    "explanation": "'clamp(MIN, VAL, MAX)' enables responsive fluid typography and sizing without media queries by bounding a preferred dynamic value between lower and upper limits."
+  },
+  {
+    "id": "q26",
+    "topic": "CSS3",
+    "difficulty": "Advanced",
+    "question": "Which CSS Grid declaration creates an automatically responsive multi-column layout where columns adapt to fit the container without media queries?",
+    "codeSnippet": ".grid-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n}",
+    "options": [
+      "repeat(auto-fit, minmax(250px, 1fr))",
+      "repeat(auto, 1fr 250px)",
+      "fit-content(250px, auto-fill)",
+      "grid-auto-columns(minmax(250px, 100%))"
+    ],
+    "correctAnswer": 0,
+    "hint": "Look for repeat combined with auto-fit and a minmax range.",
+    "explanation": "'repeat(auto-fit, minmax(250px, 1fr))' automatically fits as many 250px-or-wider columns as container width allows, stretching them equally to 1fr when space remains, providing responsive columns without media queries."
+  },
+  {
+    "id": "q27",
+    "topic": "CSS3",
+    "difficulty": "Advanced",
+    "question": "What happens when an element has 'will-change: transform' declared in CSS?",
+    "codeSnippet": ".animated-card {\n  will-change: transform;\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}",
+    "options": [
+      "It instructs the browser to promote the element to its own GPU compositor layer in advance to optimize render performance.",
+      "It causes the CSS transform to trigger a full document reflow upon every frame.",
+      "It disables transitions on all parent elements.",
+      "It forces JavaScript to compute matrix calculations instead of the browser rendering engine."
+    ],
+    "correctAnswer": 0,
+    "hint": "It provides a hint to the browser's rendering engine about impending visual modifications.",
+    "explanation": "'will-change: transform' hints to the browser ahead of time that the element will undergo transform changes, allowing the rendering engine to allocate a dedicated compositor layer and prepare GPU optimizations for butter-smooth 60fps animations."
+  },
+  {
+    "id": "q28",
+    "topic": "CSS3",
+    "difficulty": "Advanced",
+    "question": "How does 'contain: content' optimize page rendering in modern CSS?",
+    "codeSnippet": ".feed-item {\n  contain: content;\n}",
+    "options": [
+      "It restricts text strings from exceeding the container's width.",
+      "It informs the browser that the element's subtree is independent of the rest of the page, limiting reflows and repaints to the element itself.",
+      "It prevents child elements from accessing root CSS variables.",
+      "It compresses DOM node memory allocations."
+    ],
+    "correctAnswer": 1,
+    "hint": "It applies layout, style, and paint containment simultaneously.",
+    "explanation": "CSS Containment ('contain: content') informs the browser's rendering engine that the subtree is visually isolated, meaning changes inside will never trigger reflows or repaints outside this boundary, dramatically speeding up rendering of large lists."
+  },
+  {
+    "id": "q29",
+    "topic": "CSS3",
+    "difficulty": "Advanced",
+    "question": "What is the difference between ':is()' and ':where()' pseudo-class selectors in CSS?",
+    "codeSnippet": ":is(header, footer) a { color: blue; }\n:where(header, footer) a { color: blue; }",
+    "options": [
+      "':is()' takes the specificity of its most specific argument; ':where()' always has a specificity of zero (0,0,0).",
+      "':where()' only matches elements in the Shadow DOM.",
+      "':is()' requires JavaScript polyfills; ':where()' is supported natively.",
+      "':is()' cannot accept compound selectors."
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider specificity: :where() was specifically designed for easy CSS resets because it contributes 0 specificity.",
+    "explanation": "While both ':is()' and ':where()' group selectors, ':is()' adopts the specificity of its highest-specificity argument, whereas ':where()' always contributes 0 specificity, making it ideal for reset styles that are easily overridden."
+  },
+  {
+    "id": "q30",
+    "topic": "CSS3",
+    "difficulty": "Advanced",
+    "question": "What is the purpose of the CSS '@supports' feature query?",
+    "codeSnippet": "@supports (backdrop-filter: blur(10px)) {\n  .card { backdrop-filter: blur(10px); }\n}",
+    "options": [
+      "It verifies user screen resolution before loading stylesheets.",
+      "It provides conditional CSS styling based on whether the browser supports a specific CSS property-value pair.",
+      "It validates CSS syntax during build time.",
+      "It tests whether third-party CDNs are reachable."
+    ],
+    "correctAnswer": 1,
+    "hint": "It is also known as a 'feature query' in modern CSS.",
+    "explanation": "The '@supports' CSS rule tests whether the user agent supports a given CSS property: value pair, allowing progressive enhancement and graceful fallbacks."
+  },
+
+  {
+    "id": "q31",
+    "topic": "JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is the fundamental difference between '==' (loose equality) and '===' (strict equality) in JavaScript?",
+    "codeSnippet": "5 == '5';  // true\n5 === '5'; // false",
+    "options": [
+      "'===' performs type coercion before comparison; '==' checks reference identity only.",
+      "'==' performs implicit type coercion; '===' compares both value and type without coercion.",
+      "'===' is only used for comparing Objects and Arrays.",
+      "'==' compares memory addresses; '===' compares primitive values."
+    ],
+    "correctAnswer": 1,
+    "hint": "One coerces types implicitly if they don't match, while the other requires identical types.",
+    "explanation": "The loose equality operator (==) performs type conversion if operands are of different types, whereas the strict equality operator (===) returns false if the types differ, preventing subtle bugs."
+  },
+  {
+    "id": "q32",
+    "topic": "JavaScript",
+    "difficulty": "Beginner",
+    "question": "Which array method creates a new array populated with the results of calling a provided function on every element in the calling array?",
+    "codeSnippet": "const numbers = [1, 2, 3, 4];\nconst doubled = numbers.map(n => n * 2);",
+    "options": [
+      "forEach()",
+      "map()",
+      "filter()",
+      "some()"
+    ],
+    "correctAnswer": 1,
+    "hint": "Unlike forEach, this method returns a newly transformed array without mutating the original.",
+    "explanation": "Array.prototype.map() returns a new array containing the results of invoking the provided callback on each item. Array.prototype.forEach() merely executes side effects and returns undefined."
+  },
+  {
+    "id": "q33",
+    "topic": "JavaScript",
+    "difficulty": "Beginner",
+    "question": "What primitive data type was introduced in ECMAScript 2020 (ES11) to safely represent integers larger than 2^53 - 1?",
+    "codeSnippet": "const largeNum = 9007199254740991n;",
+    "options": [
+      "Int64",
+      "BigInt",
+      "Decimal",
+      "LargeInt"
+    ],
+    "correctAnswer": 1,
+    "hint": "Notice the trailing 'n' syntax.",
+    "explanation": "'BigInt' is a primitive numeric type introduced to handle arbitrarily large integers beyond JavaScript's standard Number.MAX_SAFE_INTEGER limit."
+  },
+  {
+    "id": "q34",
+    "topic": "JavaScript",
+    "difficulty": "Beginner",
+    "question": "What is the return value of 'typeof null' in JavaScript?",
+    "codeSnippet": "console.log(typeof null);",
+    "options": [
+      "\"null\"",
+      "\"undefined\"",
+      "\"object\"",
+      "\"boolean\""
+    ],
+    "correctAnswer": 2,
+    "hint": "This is a famous historical bug dating back to the very first release of JavaScript in 1995.",
+    "explanation": "In JavaScript, 'typeof null === \"object\"'. This is a historical bug from the first JavaScript implementation where type tags stored in object references designated 0 for null."
+  },
+  {
+    "id": "q35",
+    "topic": "JavaScript",
+    "difficulty": "Beginner",
+    "question": "Which keyword is used in modern JavaScript to declare block-scoped variables that cannot be reassigned?",
+    "codeSnippet": "const API_URL = 'https://api.example.com';",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "static"
+    ],
+    "correctAnswer": 2,
+    "hint": "It creates a constant reference.",
+    "explanation": "'const' creates block-scoped variables whose identifier cannot be reassigned (though internal properties of objects/arrays declared with const can still be modified)."
+  },
+  {
+    "id": "q36",
+    "topic": "JavaScript",
+    "difficulty": "Intermediate",
+    "question": "What will be logged to the console by the following code snippet demonstrating lexical scoping and closures?",
+    "codeSnippet": "function createCounter() {\n  let count = 0;\n  return function() {\n    count += 1;\n    return count;\n  };\n}\nconst c1 = createCounter();\nconst c2 = createCounter();\nc1(); c1();\nconsole.log(c2());",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "undefined"
+    ],
+    "correctAnswer": 1,
+    "hint": "Each invocation of createCounter() creates a completely separate lexical environment with its own 'count' variable.",
+    "explanation": "Every invocation of createCounter() instantiates an independent closure with a private 'count' variable. Invoking c1() modifies c1's count, but c2 has its own isolated count starting at 0, which increments to 1 on its first call."
+  },
+  {
+    "id": "q37",
+    "topic": "JavaScript",
+    "difficulty": "Intermediate",
+    "question": "What does Array.prototype.reduce() return if no initial value is provided for the accumulator on a non-empty array?",
+    "codeSnippet": "const numbers = [10, 20, 30];\nconst result = numbers.reduce((acc, curr) => acc + curr);",
+    "options": [
+      "It throws a TypeError immediately.",
+      "It defaults the accumulator to 0, running from index 0.",
+      "The accumulator starts as the first element (index 0), and iteration begins at index 1.",
+      "It returns an array containing the reduced values."
+    ],
+    "correctAnswer": 2,
+    "hint": "Notice that no second argument is passed after the callback function.",
+    "explanation": "If no initialValue is supplied to reduce(), array element 0 becomes the accumulator's initial value, and iteration starts with the element at index 1. If the array is empty without initialValue, a TypeError is thrown."
+  },
+  {
+    "id": "q38",
+    "topic": "JavaScript",
+    "difficulty": "Intermediate",
+    "question": "What is the output of the spread operator when copying and updating an object property?",
+    "codeSnippet": "const original = { a: 1, b: 2 };\nconst updated = { ...original, b: 99, c: 3 };\nconsole.log(updated.b);",
+    "options": [
+      "2",
+      "99",
+      "undefined",
+      "An error is thrown due to duplicate key 'b'"
+    ],
+    "correctAnswer": 1,
+    "hint": "Properties defined later in object literals override earlier properties with the same name.",
+    "explanation": "In JavaScript object spread, properties are applied left to right. Specifying 'b: 99' after '...original' overrides the value of 'b' from original (2), giving updated.b the value 99."
+  },
+  {
+    "id": "q39",
+    "topic": "JavaScript",
+    "difficulty": "Intermediate",
+    "question": "What is the outcome of using the Optional Chaining operator (?.) when accessing a property on null or undefined?",
+    "codeSnippet": "const user = null;\nconsole.log(user?.profile?.name);",
+    "options": [
+      "It throws a TypeError: Cannot read properties of null.",
+      "It short-circuits and safely evaluates to undefined.",
+      "It returns null.",
+      "It throws a ReferenceError."
+    ],
+    "correctAnswer": 1,
+    "hint": "It prevents runtime errors by returning undefined instead of failing.",
+    "explanation": "The optional chaining (?.) operator short-circuits if the reference before it is nullish (null or undefined), immediately returning undefined without throwing a TypeError."
+  },
+  {
+    "id": "q40",
+    "topic": "JavaScript",
+    "difficulty": "Intermediate",
+    "question": "How does Array.prototype.filter() handle elements for which the callback returns a falsy value?",
+    "codeSnippet": "const items = [0, 1, false, 2, '', 3];\nconst truthy = items.filter(Boolean);",
+    "options": [
+      "It converts them to undefined in the new array.",
+      "It excludes them from the returned array.",
+      "It stops iteration immediately.",
+      "It throws a TypeError."
+    ],
+    "correctAnswer": 1,
+    "hint": "The method produces a shallow copy of a portion of a given array, filtered down to just the elements that pass the test.",
+    "explanation": "Array.prototype.filter() calls the predicate callback for each element; if the callback returns a truthy value, the element is included in the new array; if falsy, it is skipped."
+  },
+  {
+    "id": "q41",
+    "topic": "JavaScript",
+    "difficulty": "Advanced",
+    "question": "In what order will the numbers be logged to the console based on the JavaScript Event Loop (Microtasks vs Macrotasks)?",
+    "codeSnippet": "console.log(1);\nsetTimeout(() => console.log(2), 0);\nPromise.resolve().then(() => console.log(3));\nconsole.log(4);",
+    "options": [
+      "1, 4, 3, 2",
+      "1, 2, 3, 4",
+      "1, 4, 2, 3",
+      "1, 3, 4, 2"
+    ],
+    "correctAnswer": 0,
+    "hint": "Synchronous code executes first, then the microtask queue (Promises), and finally macrotasks (setTimeout).",
+    "explanation": "1 and 4 are synchronous and log immediately. The Promise callback enters the Microtask queue, which drains right after the current execution context completes (logging 3). The setTimeout callback is in the Macrotask (Timer) queue and executes in the next event loop tick (logging 2)."
+  },
+  {
+    "id": "q42",
+    "topic": "JavaScript",
+    "difficulty": "Advanced",
+    "question": "What is the Temporal Dead Zone (TDZ) in ECMAScript 6+?",
+    "codeSnippet": "console.log(myVar); // undefined\nconsole.log(myLet); // ReferenceError\nvar myVar = 10;\nlet myLet = 20;",
+    "options": [
+      "The duration between a request initiated by fetch() and the Promise resolution.",
+      "The period between entering a scope and the actual variable declaration where 'let' and 'const' cannot be accessed.",
+      "The time taken by the Garbage Collector to sweep unreachable DOM nodes.",
+      "The delay in setTimeout before the callback enters the task queue."
+    ],
+    "correctAnswer": 1,
+    "hint": "Variables declared with let and const are hoisted, but uninitialized. Attempting to read them before initialization causes a ReferenceError.",
+    "explanation": "The Temporal Dead Zone (TDZ) is the region of code from the start of a block until the variable declaration is reached. Even though 'let' and 'const' declarations are hoisted to the top of the block, accessing them prior to declaration throws a ReferenceError."
+  },
+  {
+    "id": "q43",
+    "topic": "JavaScript",
+    "difficulty": "Advanced",
+    "question": "What is the difference between Function.prototype.call() and Function.prototype.apply()?",
+    "codeSnippet": "fn.call(context, arg1, arg2);\nfn.apply(context, [arg1, arg2]);",
+    "options": [
+      "'call' invokes the function asynchronously; 'apply' invokes it synchronously.",
+      "'call' accepts arguments as a comma-separated list; 'apply' accepts arguments as an array.",
+      "'call' sets the prototype; 'apply' sets the constructor.",
+      "There is no difference; they are exact aliases."
+    ],
+    "correctAnswer": 1,
+    "hint": "Remember mnemonic: 'C' for comma-separated (call), 'A' for array (apply).",
+    "explanation": "Both methods immediately invoke a function with a specified 'this' binding. 'call()' accepts arguments one-by-one as a comma-separated list, while 'apply()' takes arguments bundled in an array or array-like object."
+  },
+  {
+    "id": "q44",
+    "topic": "JavaScript",
+    "difficulty": "Advanced",
+    "question": "What does Object.freeze() do compared to Object.seal()?",
+    "codeSnippet": "const obj1 = Object.freeze({ x: 1 });\nconst obj2 = Object.seal({ y: 2 });",
+    "options": [
+      "Object.freeze() prevents adding, deleting, and modifying existing properties; Object.seal() prevents adding/deleting but allows modifying existing property values.",
+      "Object.seal() creates a deep clone; Object.freeze() creates a shallow clone.",
+      "Object.freeze() only works on arrays; Object.seal() only works on plain objects.",
+      "Both methods produce identical results."
+    ],
+    "correctAnswer": 0,
+    "hint": "Think of sealing as locking the structure, while freezing makes everything completely read-only.",
+    "explanation": "Object.seal() prevents new properties from being added and marks existing properties as non-configurable, but writable properties can still be modified. Object.freeze() goes further by making all existing properties non-writable as well."
+  },
+  {
+    "id": "q45",
+    "topic": "JavaScript",
+    "difficulty": "Advanced",
+    "question": "What is the role of a WeakMap compared to a regular Map in JavaScript?",
+    "codeSnippet": "const wm = new WeakMap();\nlet key = { id: 1 };\nwm.set(key, 'metadata');\nkey = null; // Eligible for garbage collection",
+    "options": [
+      "WeakMap accepts primitive keys and allows enumeration via keys() and values().",
+      "WeakMap holds 'weak' references to object keys, allowing unreferenced keys to be garbage collected to prevent memory leaks.",
+      "WeakMap synchronizes data across Web Workers.",
+      "WeakMap automatically sorts entries by insertion time."
+    ],
+    "correctAnswer": 1,
+    "hint": "WeakMap keys must be objects, and they do not prevent garbage collection.",
+    "explanation": "In a WeakMap, keys must be objects and are held weakly. If no other references to a key object exist in memory, the entry can be swept by the garbage collector, preventing memory leaks in DOM metadata associations."
+  },
+
+  {
+    "id": "q46",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Beginner",
+    "question": "Which method is the most modern and flexible way to attach an event handler to a DOM element without overwriting existing listeners?",
+    "codeSnippet": "const btn = document.querySelector('#submit-btn');\n// Preferred approach:\nbtn.addEventListener('click', handlerFunction);",
+    "options": [
+      "btn.onclick = function() { ... }",
+      "btn.addEventListener('click', handlerFunction)",
+      "btn.attachEvent('onclick', handlerFunction)",
+      "btn.setAttribute('onclick', 'handlerFunction()')"
+    ],
+    "correctAnswer": 1,
+    "hint": "This standard DOM Level 2 method supports multiple listeners on the same element and allows event options like capturing or once.",
+    "explanation": "'addEventListener' allows registering multiple independent event handlers on a single target, supports capturing and bubbling phases, and accepts options such as 'once' and 'passive'."
+  },
+  {
+    "id": "q47",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Beginner",
+    "question": "Which DOM method selects the first element matching a given CSS selector string?",
+    "codeSnippet": "const activeCard = document.querySelector('.card.active');",
+    "options": [
+      "document.getElementById()",
+      "document.querySelector()",
+      "document.getElementsByClassName()",
+      "document.findAll()"
+    ],
+    "correctAnswer": 1,
+    "hint": "It accepts any standard CSS selector and returns a single element.",
+    "explanation": "document.querySelector() returns the first Element within the document that matches the specified CSS selector or selector group, or null if no matches are found."
+  },
+  {
+    "id": "q48",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Beginner",
+    "question": "Which property is safest to use when updating the visible textual content of an element without creating XSS injection vulnerabilities?",
+    "codeSnippet": "const label = document.querySelector('#user-status');\nlabel.textContent = userInput;",
+    "options": [
+      "innerHTML",
+      "outerHTML",
+      "textContent",
+      "dangerouslySetInnerHTML"
+    ],
+    "correctAnswer": 2,
+    "hint": "Unlike innerHTML, this property sets raw text without parsing HTML tags.",
+    "explanation": "'textContent' sets the text content of a node and its descendants without parsing it as HTML markup, safely escaping any embedded script tags or special characters to prevent Cross-Site Scripting (XSS)."
+  },
+  {
+    "id": "q49",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Beginner",
+    "question": "Which classList method adds a CSS class if not present and removes it if it is already present?",
+    "codeSnippet": "element.classList.toggle('active');",
+    "options": [
+      "classList.switch()",
+      "classList.toggle()",
+      "classList.swap()",
+      "classList.invert()"
+    ],
+    "correctAnswer": 1,
+    "hint": "It toggles the class like a light switch.",
+    "explanation": "'element.classList.toggle('class-name')' removes the class if it exists and returns false; if it does not exist, it adds the class and returns true."
+  },
+  {
+    "id": "q50",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Beginner",
+    "question": "Which DOM event fires when the initial HTML document has been completely parsed, without waiting for stylesheets, images, and subframes to finish loading?",
+    "codeSnippet": "document.addEventListener('DOMContentLoaded', () => {\n  console.log('DOM ready!');\n});",
+    "options": [
+      "load",
+      "DOMContentLoaded",
+      "beforeunload",
+      "ready"
+    ],
+    "correctAnswer": 1,
+    "hint": "It fires sooner than window.onload.",
+    "explanation": "'DOMContentLoaded' fires when the HTML document has been completely parsed into the DOM tree, without waiting for external images, fonts, or stylesheets to finish downloading."
+  },
+  {
+    "id": "q51",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Intermediate",
+    "question": "What is the key distinction between 'event.target' and 'event.currentTarget' inside an event listener?",
+    "codeSnippet": "container.addEventListener('click', (event) => {\n  console.log(event.target);\n  console.log(event.currentTarget);\n});",
+    "options": [
+      "'event.target' is the element that triggered the event; 'event.currentTarget' is the element listening to the event.",
+      "'event.target' is always the document root; 'event.currentTarget' is the clicked element.",
+      "'event.target' refers to the parent container; 'event.currentTarget' is the child button.",
+      "Both properties always reference the exact same DOM node at all times."
+    ],
+    "correctAnswer": 0,
+    "hint": "When using event delegation on a parent container, think about which element was actually clicked versus which element has the listener attached.",
+    "explanation": "'event.target' is the deepest DOM element that dispatched the event (e.g. an icon inside a button), whereas 'event.currentTarget' always refers to the element to which the event handler has been attached."
+  },
+  {
+    "id": "q52",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Intermediate",
+    "question": "Which storage mechanism retains data across browser tabs and persists even after the user closes and reopens the browser window?",
+    "codeSnippet": "localStorage.setItem('userTheme', 'dark');\nsessionStorage.setItem('tempToken', 'xyz');",
+    "options": [
+      "sessionStorage",
+      "localStorage",
+      "MemoryCache API",
+      "JavaScript closures"
+    ],
+    "correctAnswer": 1,
+    "hint": "One persists indefinitely until explicitly cleared; the other expires when the browser tab/session is closed.",
+    "explanation": "'localStorage' stores key-value pairs with no expiration time across all same-origin tabs and survives browser restarts. 'sessionStorage' clears data when the page session or tab is closed."
+  },
+  {
+    "id": "q53",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Intermediate",
+    "question": "What is the purpose of 'event.preventDefault()' in a form submit event handler?",
+    "codeSnippet": "form.addEventListener('submit', (e) => {\n  e.preventDefault();\n  // Custom submission logic\n});",
+    "options": [
+      "It stops event bubbling to parent DOM elements.",
+      "It halts JavaScript execution immediately.",
+      "It suppresses the browser's default behavior of reloading the page or sending an HTTP GET/POST.",
+      "It resets all form input fields back to empty strings."
+    ],
+    "correctAnswer": 2,
+    "hint": "Default browser behavior on form submission is to refresh or navigate the page to the form's action URL.",
+    "explanation": "event.preventDefault() cancels the default action that belongs to the event (such as navigating to a URL or submitting and reloading the page), allowing JavaScript single-page apps to handle submission asynchronously."
+  },
+  {
+    "id": "q54",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Intermediate",
+    "question": "What is the advantage of 'Event Delegation' in JavaScript applications?",
+    "codeSnippet": "document.querySelector('#todo-list').addEventListener('click', (e) => {\n  if (e.target.matches('.delete-btn')) deleteItem(e.target);\n});",
+    "options": [
+      "It binds a single listener on a parent instead of hundreds of listeners on child nodes, reducing memory and automatically handling dynamic elements.",
+      "It runs event handlers in a Web Worker background thread.",
+      "It forces the event to bypass the capturing phase entirely.",
+      "It disables event propagation across iframe boundaries."
+    ],
+    "correctAnswer": 0,
+    "hint": "Leveraging event bubbling allows one listener to manage current and future child elements efficiently.",
+    "explanation": "Event delegation leverages event bubbling by attaching a single event listener to a common ancestor. This minimizes memory consumption and automatically handles dynamically inserted elements without needing new listeners."
+  },
+  {
+    "id": "q55",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Intermediate",
+    "question": "What is the difference between synchronous localStorage and asynchronous IndexedDB?",
+    "codeSnippet": "// Synchronous blocking:\nlocalStorage.setItem('k', 'v');\n// Asynchronous non-blocking:\nindexedDB.open('myDb', 1);",
+    "options": [
+      "localStorage blocks the main UI thread during read/writes; IndexedDB is asynchronous and supports large structured data without blocking.",
+      "localStorage stores binary Blobs; IndexedDB only stores 5MB of plain strings.",
+      "localStorage is deprecated in modern browsers; IndexedDB is only for Service Workers.",
+      "There is no performance difference."
+    ],
+    "correctAnswer": 0,
+    "hint": "localStorage is synchronous, so reading/writing large strings can freeze UI animations.",
+    "explanation": "localStorage operates synchronously on the main JavaScript thread, which can cause frame drops and UI stutter during large read/write operations. IndexedDB is transactional, asynchronous, and designed for large structured object storage."
+  },
+  {
+    "id": "q56",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Advanced",
+    "question": "What is the performance advantage of using 'DocumentFragment' when appending multiple elements to the DOM in a loop?",
+    "codeSnippet": "const fragment = document.createDocumentFragment();\nfor (let i = 0; i < 100; i++) {\n  const el = document.createElement('div');\n  fragment.appendChild(el);\n}\ndocument.body.appendChild(fragment);",
+    "options": [
+      "It prevents garbage collection memory leaks in single-page apps.",
+      "It batch-inserts elements in memory, causing only a single reflow/repaint on the document tree.",
+      "It renders the nodes off-screen on a separate background Web Worker thread.",
+      "It automatically minifies HTML markup before DOM tree construction."
+    ],
+    "correctAnswer": 1,
+    "hint": "Every direct insertion to document.body triggers layout recalculations; fragments exist only in memory until appended.",
+    "explanation": "A DocumentFragment is a lightweight minimal document object that exists solely in memory. Appending children to it triggers zero browser reflows; appending the fragment to the DOM inserts all children in a single reflow/repaint."
+  },
+  {
+    "id": "q57",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Advanced",
+    "question": "How does 'event.stopPropagation()' differ from 'event.stopImmediatePropagation()'?",
+    "codeSnippet": "btn.addEventListener('click', (e) => {\n  e.stopImmediatePropagation();\n});\nbtn.addEventListener('click', secondHandler);",
+    "options": [
+      "'stopPropagation' stops bubbling up the DOM; 'stopImmediatePropagation' also prevents other handlers attached to the same element from running.",
+      "'stopImmediatePropagation' cancels network requests; 'stopPropagation' only affects DOM events.",
+      "'stopPropagation' only works during the capturing phase; 'stopImmediatePropagation' works in bubbling.",
+      "There is no difference; they are legacy aliases of each other."
+    ],
+    "correctAnswer": 0,
+    "hint": "Look at what happens to other listeners on the SAME element versus parent elements.",
+    "explanation": "While 'stopPropagation()' stops the event from propagating to ancestor elements up or down the DOM hierarchy, 'stopImmediatePropagation()' stops ancestors AND prevents any subsequent listeners on the current element from executing."
+  },
+  {
+    "id": "q58",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Advanced",
+    "question": "Which modern Web API asynchronously monitors when a target element enters or exits the browser's visible viewport (ideal for lazy loading and infinite scroll)?",
+    "codeSnippet": "const observer = new IntersectionObserver(callback, options);\nobserver.observe(heroImage);",
+    "options": [
+      "MutationObserver",
+      "ResizeObserver",
+      "IntersectionObserver",
+      "PerformanceObserver"
+    ],
+    "correctAnswer": 2,
+    "hint": "It observes the intersection between an element and the viewport.",
+    "explanation": "The IntersectionObserver API provides an asynchronous way to observe changes in the intersection of a target element with an ancestor element or the top-level document viewport, replacing expensive scroll event polling."
+  },
+  {
+    "id": "q59",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Advanced",
+    "question": "Which Web API monitors DOM tree mutations such as element additions, removals, or attribute modifications without polling?",
+    "codeSnippet": "const observer = new MutationObserver(mutations => {\n  console.log('DOM changed', mutations);\n});\nobserver.observe(document.body, { childList: true, subtree: true });",
+    "options": [
+      "DOMNodeInserted API",
+      "MutationObserver",
+      "TreeWatcher API",
+      "DOMChangeListener"
+    ],
+    "correctAnswer": 1,
+    "hint": "It observes DOM mutations.",
+    "explanation": "MutationObserver provides a performant, non-blocking way to listen for changes being made to the DOM tree (such as nodes being added or removed, or attributes changing), replacing deprecated Mutation Events."
+  },
+  {
+    "id": "q60",
+    "topic": "DOM & Web APIs",
+    "difficulty": "Advanced",
+    "question": "Why should developers use the 'passive: true' option on touch and wheel event listeners?",
+    "codeSnippet": "window.addEventListener('touchstart', onTouchStart, { passive: true });",
+    "options": [
+      "It stops event bubbling to parent nodes.",
+      "It tells the browser that the listener will not call 'preventDefault()', enabling smooth jank-free 60fps scrolling on mobile devices.",
+      "It forces the event listener to execute only once before self-removing.",
+      "It gives the event listener higher CPU thread priority."
+    ],
+    "correctAnswer": 1,
+    "hint": "Browsers normally have to wait for the listener to finish before scrolling to see if preventDefault was called; passive promises it won't.",
+    "explanation": "'{ passive: true }' signals to the browser engine that the handler will never invoke 'preventDefault()', allowing the browser to begin smooth scrolling immediately on the compositor thread without waiting for JavaScript execution."
+  }
+]
